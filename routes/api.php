@@ -23,7 +23,6 @@ use App\Http\Controllers\AuthController;
 Route::post('login', [AuthController::class,'login']);
 
 Route::group(['middleware' => ['apiJwt']], function(){
-    Route::get('users',[UserController::class, 'index']);
     Route::get('departments/get-info-department-professional-patient/{patient_id}',[DepartmentController::class, 'getInfoDepartmentProfessionalPatient']);
 });
 
