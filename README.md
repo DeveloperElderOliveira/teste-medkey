@@ -2,6 +2,7 @@
 - composer install
 - php artisan key:generate (se precisar)
 - php artisan jwt:secret (se precisar)
+- copy .env.example
 - php artisan migrate
 - php artisan db:seed
 - php artisan serve
